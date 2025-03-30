@@ -5,6 +5,7 @@ This nice test project which gonna be CRUD/Auth template in FastAPI - is a back-
 using Python and FastAPI, following the MVC design pattern. 
 The application interfaces with a MySQL database using SQLAlchemy for ORM and implements field validation 
 and dependency injection as needed.
+![App Swagger](https://github.com/Kochurovskyi/lucid-fastapi/app_swagger.png)
 
 ### Features
 * MVC Design Pattern: The application is structured into three levels for routing, business logic, and database calls.
