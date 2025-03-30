@@ -16,35 +16,35 @@ and dependency injection as needed.
 
 ### Endpoints
 #### Signup Endpoint
-Description: Accepts email and password, returns a token (JWT or randomly generated string).
-Method: POST
-Path: /auth/signup
+* Description: Accepts email and password, returns a token (JWT or randomly generated string).
+* Method: POST
+* Path: /auth/signup
 #### Login Endpoint
-Description: Accepts email and password, returns a token upon successful login; error response if login fails.
-Method: POST
-Path: /auth/login
+* Description: Accepts email and password, returns a token upon successful login; error response if login fails.
+* Method: POST
+* Path: /auth/login
 #### AddPost Endpoint
-Description: Accepts text and a token for authentication, validates payload size (limit to 1 MB), saves the post in memory, returning postID. Returns an error for invalid or missing token.
-Method: POST
-Path: /posts/post
-Dependencies: Token authentication, payload size validation.
+* Description: Accepts text and a token for authentication, validates payload size (limit to 1 MB), saves the post in memory, returning postID. Returns an error for invalid or missing token.
+* Method: POST
+* Path: /posts/post
+* Dependencies: Token authentication, payload size validation.
 #### GetPosts Endpoint
-Description: Requires a token for authentication, returns all user's posts, implements response caching for up to 5 minutes for the same user. Returns an error for invalid or missing token.
-Method: GET
-Path: /posts
-Dependencies: Token authentication, response caching.
+* Description: Requires a token for authentication, returns all user's posts, implements response caching for up to 5 minutes for the same user. Returns an error for invalid or missing token.
+* Method: GET
+* Path: /posts
+* Dependencies: Token authentication, response caching.
 #### PutPost Endpoint
-Description: Accepts postID, text, and a token for authentication, updates the corresponding post in memory. Returns an error for invalid or missing token.
-Method: PUT
-Path: /posts/post/{post_id}
-Dependencies: Token authentication.
+* Description: Accepts postID, text, and a token for authentication, updates the corresponding post in memory. Returns an error for invalid or missing token.
+* Method: PUT
+* Path: /posts/post/{post_id}
+* Dependencies: Token authentication, payload size validation.
 #### DeletePost Endpoint
-Description: Accepts postID and a token for authentication, deletes the corresponding post from memory. Returns an error for invalid or missing token.
-Method: DELETE
-Path: /posts/post/{post_id}
-Dependencies: Token authentication.
+* Description: Accepts postID and a token for authentication, deletes the corresponding post from memory. Returns an error for invalid or missing token.
+* Method: DELETE
+* Path: /posts/post/{post_id}
+* Dependencies: Token authentication.
 
-Task status:
+### Task status:
 ✅ Efficiency: Ensure all functions and dependencies run efficiently, minimizing database calls. 
 ✅ Token-Based Authentication: Utilized for "AddPost" and "GetPosts" endpoints.
 ✅ Request Validation: Implemented for "AddPost" endpoint to ensure payload does not exceed 1 MB.
