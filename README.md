@@ -15,6 +15,11 @@ and dependency injection as needed.
 * Token-Based Authentication: Implemented for secure access to endpoints.
 * In-Memory Caching: Used for caching responses for up to 5 minutes.
 
+### Data
+The database file () is included and contain some data. Feel free to play around with it under the users:
+* yuko@email.com / password: 1234
+* jeff@email.com / password: 1234
+
 ### Endpoints
 #### Signup Endpoint
 * Description: Accepts email and password, returns a token (JWT or randomly generated string).
