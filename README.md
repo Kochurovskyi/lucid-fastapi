@@ -45,20 +45,9 @@ and dependency injection as needed.
 * Dependencies: Token authentication.
 
 ### Task status:
-✅ Efficiency: Ensure all functions and dependencies run efficiently, minimizing database calls. 
-✅ Token-Based Authentication: Utilized for "AddPost" and "GetPosts" endpoints.
-✅ Request Validation: Implemented for "AddPost" endpoint to ensure payload does not exceed 1 MB.
-✅ In-Memory Caching: Implemented for "GetPosts" endpoint to cache data for up to 5 minutes.
-✅ Documentation: In Code comprehensive documentation and comments for each function explaining the purpose and functionality of the code.
+* ✅ Efficiency: Ensure all functions and dependencies run efficiently, minimizing database calls. 
+* ✅ Token-Based Authentication: Utilized for "AddPost" and "GetPosts" endpoints.
+* ✅ Request Validation: Implemented for "AddPost" endpoint to ensure payload does not exceed 1 MB.
+* ✅ In-Memory Caching: Implemented for "GetPosts" endpoint to cache data for up to 5 minutes.
+* ✅ Documentation: In Code comprehensive documentation and comments for each function explaining the purpose and functionality of the code.
 
-### Installation
-Clone the repository:
-git clone <repository-link>
-Install dependencies:
-pip install -r requirements.txt
-Set up the database:
-python setup_db.py
-Run the application:
-uvicorn main:app --reload
-Usage
-Access the API documentation at http://localhost:8000/docs for detailed information on each endpoint and how to use them.
