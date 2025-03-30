@@ -16,7 +16,7 @@ and dependency injection as needed.
 * In-Memory Caching: Used for caching responses for up to 5 minutes.
 
 ### Data
-The database file () is included and contain some data. Feel free to play around with it under the users:
+The database file (database.db) is included and contain some data. Feel free to play around with it under the users:
 * yuko@email.com / password: 1234
 * jeff@email.com / password: 1234
 
